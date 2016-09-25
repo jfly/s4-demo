@@ -1,0 +1,52 @@
+h1, h2 {
+    text-align: center;
+}
+
+h2 {
+    font-size: 15px;
+}
+
+#s4-poll {
+    margin-top: 20px;
+
+    opacity: 0;
+    transition: opacity .25s ease-in-out;
+}
+
+#s4-poll.show-poll {
+    opacity: 1;
+}
+
+#s4-poll-question {
+    display: flex;
+    align-items: center;
+}
+
+#s4-poll-question h3 {
+    margin: 0px 20px 0px 0px;
+    white-space: nowrap;
+}
+
+.s4-poll-results {
+    opacity: 0;
+    transition: opacity .25s ease-in-out;
+}
+
+.answered-poll .s4-poll-results {
+    opacity: 1;
+}
+
+.answered-yes #s4-poll-no {
+    visibility: hidden;
+}
+
+.answered-no #s4-poll-yes {
+    visibility: hidden;
+}
+
+
+/* From http://stackoverflow.com/a/25517025 */
+.vertical-align {
+    display: flex;
+    align-items: center;
+}

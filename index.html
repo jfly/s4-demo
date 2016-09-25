@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+
+        <!-- From https://dev.twitter.com/web/intents -->
+        <script async src="//platform.twitter.com/widgets.js"></script>
+
+        <script async src="index.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>
+                S4
+            </h1>
+            <h2>
+                an interactive media player that integrates social media and engagement
+            </h2>
+
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <video id="video-player" src="video.mp4" controls></video>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    Twitter stuff here
+
+                    <ul>
+                        <li>
+                            <a href="https://twitter.com/intent/tweet?text=@veronicadlcruz">One kind of intent (using text)</a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/intent/tweet?via=veronicadlcruz">Another kind of intent (using via)</a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/intent/tweet?screen_name=veronicadlcruz">Another kind of intent (using screen_name)</a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/intent/tweet?screen_name=veronicadlcruz" class="twitter-mention-button" data-show-count="false">Tweet to @veronicadlcruz</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row" id="s4-poll">
+                <div class="col-sm-8" id="s4-poll-question">
+                    <h3>Live Poll:</h3>
+                    <div>
+                        Is S4 going to be the greatest media player of all time?
+                        Kind of like how Kanye eats potatoes?
+                    </div>
+                </div>
+                <div class="col-sm-4 s4-poll-answer">
+                    <div class="row vertical-align">
+                        <div class="col-xs-4">
+                            <button type="button" id="s4-poll-yes" class="btn btn-default btn-block">Yes</button>
+                        </div>
+                        <div class="col-xs-8 s4-poll-results">
+                            72% - 1501
+                        </div>
+                    </div>
+                    <div class="row vertical-align">
+                        <div class="col-xs-4">
+                            <button type="button" id="s4-poll-no" class="btn btn-default btn-block">No</button>
+                        </div>
+                        <div class="col-xs-8 s4-poll-results">
+                            28% - 493
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
