@@ -6,7 +6,7 @@
 
 ## Run
 
-- `python3 -m http.server` - Starts up a webserver accessible at http://localhost:8000
+- `ruby -run -ehttpd . -p8000` - Starts up a webserver accessible at http://localhost:8000
 
 ## How to compress videos
 
