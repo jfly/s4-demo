@@ -1,6 +1,6 @@
 (function() {
 
-var SHOW_POLL_DELAY_SECONDS = 5;
+var SHOW_POLL_DELAY_SECONDS = 63;
 
 window.addEventListener("load", function() {
     var videoEl = document.getElementById("video-player");
